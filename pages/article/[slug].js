@@ -10,14 +10,15 @@ export default function ArticlePage({
   content,
 }) {
   return (
-    <>
+    <div className="article">
       <Link href="/">Go back</Link>
 
       <h1>{title}</h1>
-      <div className="article-body">
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-      </div>
-    </>
+      <div
+        className="article-content"
+        dangerouslySetInnerHTML={{ __html: marked(content) }}
+      ></div>
+    </div>
   );
 }
 

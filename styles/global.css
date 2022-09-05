@@ -1,4 +1,8 @@
-/* Const Setup */
+:root {
+  --black: #101010;
+  --white: #f1f1f1;
+  --gray: #6d6d6d;
+}
 
 @font-face {
   font-family: "HallandPartners";
@@ -34,7 +38,11 @@
   font-weight: lighter;
 }
 
-/* Boilerplate Setup */
+/* ----------------------------
+
+Boilerplate
+
+---------------------------- */
 
 * {
   box-sizing: border-box;
@@ -152,6 +160,8 @@ h5,
 h6,
 input {
   font-family: Graphik;
+  color: var(--black);
+  line-height: 150%;
 }
 
 table {
@@ -169,12 +179,163 @@ ul {
   list-style: none;
 }
 
-/* Project Setup */
+/* ----------------------------
+
+Project Setup
+
+---------------------------- */
 body {
-  padding: 40px;
+  background-color: var(--white);
 }
 
-/* Components */
+/* ----------------------------
+
+Components 
+
+---------------------------- */
+
+/* Header */
+.header {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  border-bottom: 1px solid var(--black);
+  align-items: center;
+  justify-content: center;
+}
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+}
+
+.header-link {
+  font-family: HallandPartners;
+  font-weight: bold;
+  color: var(--black);
+  font-size: 16px;
+}
+
+.header-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-link:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+/* App */
 .main-container {
-  max-width: 800px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 16px 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Home */
+.home-header {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.home-header > img {
+  width: 100%;
+}
+
+.home-header > p {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-header {
+    margin: 40px 0;
+  }
+
+  .home-header > p {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+}
+
+/* Articles */
+.article-card {
+  position: relative;
+  padding: 24px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+}
+
+.article-card:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.article-card > h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.article-card > p {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.article-card > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.articles-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.articles-title > p {
+  font-size: 24px;
+}
+
+.articles-title > div {
+  flex: 1;
+  height: 1px;
+  background-color: var(--black);
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .article-card > h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .article-card > p {
+    font-size: 12px;
+    color: var(--gray);
+  }
+
+  .articles-title {
+    margin-bottom: 16px;
+  }
+
+  .articles-title > p {
+    font-size: 16px;
+  }
+}
+
+/* Article */
+.article-content > p {
+  margin-bottom: 16px;
 }

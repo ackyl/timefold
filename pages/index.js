@@ -2,36 +2,35 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
+import Article from "../components/Article";
 import { sortByDate } from "../utils";
 
 import Link from "next/link";
 
 export default function Home({ articles }) {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Timefold</title>
         <link rel="icon" href="/timefold-logo.svg" />
       </Head>
 
-      <main>
-        <p className="title">
-          All about game design, development, and everything in between.
-        </p>
+      <div className="home-header">
+        <img src="/images/timefold-header.png"></img>
+        <p>All about game design, development, and everything in between.</p>
+      </div>
 
-        <div className="articles">
-          {articles.map((article, index) => (
-            <div key={index}>
-              <p>{article.frontmatter.title}</p>
-              <p>{article.frontmatter.date}</p>
-              <Link href={`/article/${article.slug}`}>
-                <a>Read More</a>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </main>
-    </div>
+      <div className="articles-title">
+        <p>New Articles</p>
+        <div></div>
+      </div>
+
+      <div className="articles">
+        {articles.map((article, index) => (
+          <Article key={index} article={article} />
+        ))}
+      </div>
+    </>
   );
 }
 
