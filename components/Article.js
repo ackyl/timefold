@@ -5,7 +5,7 @@ export default function Article({ article }) {
     <div className="article-card">
       <h3>{article.frontmatter.title}</h3>
 
-      <p>{article.frontmatter.excerpt}</p>
+      <p>{article.frontmatter.subtitle}</p>
 
       <Link href={`/article/${article.slug}`}>
         <a></a>

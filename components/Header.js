@@ -7,10 +7,7 @@ export default function Header() {
         <Link href="/" passHref>
           <a className="header-link">home</a>
         </Link>
-        <Link href="/" passHref>
-          <a className="header-link">articles</a>
-        </Link>
-        <Link href="/" passHref>
+        <Link href="/about" passHref>
           <a className="header-link">about me</a>
         </Link>
       </div>

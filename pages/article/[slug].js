@@ -5,15 +5,27 @@ import { marked } from "marked";
 import Link from "next/link";
 
 export default function ArticlePage({
-  frontmatter: { title, date, excerpt },
+  frontmatter: { title, date, subtitle },
   slug,
   content,
 }) {
   return (
     <div className="article">
-      <Link href="/">Go back</Link>
+      {/* <Link href="/">Go back</Link> */}
 
-      <h1>{title}</h1>
+      <div className="article-header">
+        <div className="article-header__top">
+          <div className="article-header__link">
+            <img src="/left-arrow.svg" />
+            <Link href="/">
+              <a></a>
+            </Link>
+          </div>
+          <h1>{title}</h1>
+        </div>
+        <p>{subtitle}</p>
+      </div>
+
       <div
         className="article-content"
         dangerouslySetInnerHTML={{ __html: marked(content) }}
