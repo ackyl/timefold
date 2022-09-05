@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>𝖙𝖎𝖒𝖊𝖋𝖔𝖑𝖉</title>
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <Header />
       <main className="main-container">

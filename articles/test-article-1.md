@@ -1,5 +1,5 @@
 ---
-title: "Test Article"
+title: "Test Article 1"
 date: "September 5, 2022"
 subtitle: "Lorem ipsum dolor sit amet"
 ---

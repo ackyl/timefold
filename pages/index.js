@@ -10,11 +10,11 @@ export default function Home({ articles }) {
       <div className="home">
         <div className="home-header">
           <img src="/images/timefold-header-3.png"></img>
-          <p>All about game design, development, and everything in between.</p>
+          <p>Design, development, and everything in between.</p>
         </div>
 
         <div className="articles-title">
-          <p>New Articles</p>
+          <p>Latest</p>
           <div></div>
         </div>
 
