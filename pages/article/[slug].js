@@ -11,8 +11,6 @@ export default function ArticlePage({
 }) {
   return (
     <div className="article">
-      {/* <Link href="/">Go back</Link> */}
-
       <div className="article-header">
         <div className="article-header__top">
           <div className="article-header__link">
