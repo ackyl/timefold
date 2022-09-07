@@ -567,6 +567,10 @@ Components
   margin-bottom: 16px;
 }
 
+.red {
+  background-image: linear-gradient(to right, var(--white), red);
+}
+
 @media only screen and (max-width: 600px) {
   .about {
     padding: 24px 0;
