@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>In Wonder I Trust</title>
+        <title>Timefold</title>
         <link rel="icon" href="/icon.png" />
       </Head>
       <Header />

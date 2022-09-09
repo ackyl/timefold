@@ -39,13 +39,6 @@ export default function AboutPage() {
         <a href="https://www.dribbble.com/ackyl" target="_blank" />
         <img src="/right-arrow.svg" />
       </div>
-
-      <p className="about-footer">
-        <i>
-          * this markdown website is created using next.js and is deployed with
-          vercel.
-        </i>
-      </p>
     </div>
   );
 }
