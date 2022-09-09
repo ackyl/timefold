@@ -7,8 +7,13 @@ export default function Header() {
         <Link href="/" passHref>
           <a className="header-link">home</a>
         </Link>
+        <Link href="https://whitenoise-ackyl.vercel.app/" passHref>
+          <a className="header-link" target="_blank">
+            music
+          </a>
+        </Link>
         <Link href="/about" passHref>
-          <a className="header-link">about me</a>
+          <a className="header-link">about</a>
         </Link>
       </div>
     </header>

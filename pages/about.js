@@ -40,12 +40,6 @@ export default function AboutPage() {
         <img src="/right-arrow.svg" />
       </div>
 
-      <div className="button red">
-        <p>i̶̛͚̩͔͛̐n̴̝̆͝ ̷̺̞̜̄t̷͙̩͕͑͂h̴̫̗͊͋͐e̷̲̤̓̂ ̷͓̬̍e̴̗͌̚͝ȳ̶̘ē̸̯̥̾̚ ̶̠̀͒̅o̶̙̻̒̾̃f̴͔̗̱̃ ̶̨̙̞̈́ṫ̵̩͔h̴̨̬̳͋̽̍e̸͚͓͙̅͌ ̵̬̪͙͛̌͘b̵̮̮͗̕ê̸͇h̵̘͔̦͑o̵̹̲̜͋̄̓l̸͓̇d̷̛̤̰͍ē̵̦̚r̵͔̈́</p>
-        <a href="https://www.youtube.com/watch?v=Wg8dfagCmEI" target="_blank" />
-        <img src="/right-arrow.svg" />
-      </div>
-
       <p className="about-footer">
         <i>
           * this markdown website is created using next.js and is deployed with
